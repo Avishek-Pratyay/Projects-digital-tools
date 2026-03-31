@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Writing Pro Kit",
+    "description": "AI writing tools for blogs and content",
+    "price": 19,
+    "period": "monthly",
+    "tagType": "Popular",
+    "features": ["100+ templates", "Grammar fix", "Export PDF"],
+    "icon": "/assets/writing_23274001.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates",
+    "description": "Modern UI/UX design kits",
+    "price": 29,
+    "period": "one-time",
+    "tagType": "New",
+    "features": ["Figma files", "Responsive", "Free updates"],
+    "icon": "/assets/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Pack",
+    "description": "Grow your social media",
+    "price": 15,
+    "period": "monthly",
+    "tagType": "Best Seller",
+    "features": ["Post templates", "Scheduler", "Analytics"],
+    "icon": "/assets/social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Build stunning portfolios",
+    "price": 25,
+    "period": "yearly",
+    "tagType": "Popular",
+    "features": ["Templates", "Hosting", "SEO"],
+    "icon": "/assets/portfolio.png"
+  },
+  {
+    "id": 5,
+    "name": "Operations Tool",
+    "description": "Manage workflows easily",
+    "price": 30,
+    "period": "monthly",
+    "tagType": "New",
+    "features": ["Task manager", "Automation", "Reports"],
+    "icon": "/assets/operation.png"
+  },
+  {
+    "id": 6,
+    "name": "Marketing Kit",
+    "description": "Boost marketing campaigns",
+    "price": 18,
+    "period": "monthly",
+    "tagType": "Best Seller",
+    "features": ["Email tools", "Ads manager", "SEO"],
+    "icon": "/assets/package.png"
+  },
+  {
+    "id": 7,
+    "name": "Startup Toolkit",
+    "description": "All tools for startups",
+    "price": 49,
+    "period": "yearly",
+    "tagType": "Popular",
+    "features": ["Pitch decks", "Finance tools", "Docs"],
+    "icon": "/assets/rocket.png"
+  },
+  {
+    "id": 8,
+    "name": "User Analytics",
+    "description": "Track user behavior",
+    "price": 20,
+    "period": "monthly",
+    "tagType": "New",
+    "features": ["Heatmaps", "Reports", "Tracking"],
+    "icon": "/assets/user.png"
+  }
+]
