@@ -1,16 +1,24 @@
-# React + Vite
+#  Digital Tools Buying Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+A modern web application to browse, explore, and purchase premium digital tools. The website features an intuitive UI, product categories, and a fully functional shopping cart with React.js and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Technologies Used
+- React.js – Frontend library for building interactive UI  
+- Tailwind CSS & DaisyUI – Styling and responsive design  
+- React-Toastify – Notifications for cart actions  
+- JSON – Product data  
+- JavaScript (ES6+) – Logic and interactivity
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Key Features
+1. Product Browsing & Filtering – View 6–10 products with categories like Popular, New, Best Seller.  
+2. Shopping Cart Functionality – Add, remove, and checkout products with live cart count updates.  
+3. Responsive & Figma-Accurate Design – Mobile-friendly layout, hero section, stats, steps, pricing, and footer matching Figma.
 
-## React Compiler
+## Live Site
+View the Live Website:   https://avishek-digitaltools-buying-site.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Optional Features Implemented
+- Dynamic “Added to Cart” messages using React-Toastify  
+- Cart count in navbar updates in real-time  
+- Checkout button clears all cart items
