@@ -1,51 +1,79 @@
 export default function Pricing() {
   return (
-    <div className="py-20 bg-gray-50 text-center">
+    <div className="py-20 bg-gray-50">
 
-      <h2 className="text-3xl font-bold mb-10">
-        Simple, Transparent Pricing
-      </h2>
-      
-      
+      {/* TITLE */}
+      <div className="text-center">
+        <h2 className="text-3xl font-bold mb-3">
+          Simple, Transparent Pricing
+        </h2>
+        <p className="text-gray-500 mb-12">
+          Choose the perfect plan for your needs
+        </p>
+      </div>
 
+      {/* CARDS */}
       <div className="grid md:grid-cols-3 gap-8 px-10">
 
-        {/* BASIC */}
-        <div className="bg-white p-6 rounded-xl shadow">
-          <h3 className="font-bold mb-2">Basic</h3>
-          <p className="text-3xl font-bold">$0</p>
-          <ul className="text-gray-500 mt-4 space-y-1">
-            <li>✔ Free tools</li>
-            <li>✔ Limited access</li>
-          </ul>
-          <button className="mt-6 border px-4 py-2 rounded">
+        {/* STARTER */}
+        <div className="bg-white p-8 rounded-xl shadow-md text-left">
+          <h3 className="font-semibold text-lg">Starter</h3>
+          <p className="text-gray-500 mt-1">Perfect for getting started</p>
+
+          <p className="text-4xl font-bold mt-4">$0</p>
+          <p className="text-gray-400 mb-6">/Month</p>
+
+          <ul className="space-y-2 text-sm text-gray-600">
+  <li><span className="text-green-500 mr-2">✔</span>Access to 10 free tools</li>
+  <li><span className="text-green-500 mr-2">✔</span>Basic templates</li>
+  <li><span className="text-green-500 mr-2">✔</span>Community support</li>
+</ul>
+
+          <button className="mt-8 bg-purple-600 text-white w-full py-2 rounded-full hover:bg-purple-700">
             Get Started
           </button>
         </div>
 
-        {/* PRO (HIGHLIGHTED) */}
-        <div className="bg-purple-600 text-white p-6 rounded-xl shadow scale-105">
-          <h3 className="font-bold mb-2">Pro</h3>
-          <p className="text-3xl font-bold">$29</p>
-          <ul className="mt-4 space-y-1">
-            <li>✔ All tools</li>
-            <li>✔ Premium features</li>
-            <li>✔ Priority support</li>
-          </ul>
-          <button className="mt-6 bg-white text-purple-600 px-4 py-2 rounded">
+        {/* PRO */}
+        <div className="bg-purple-600 text-white p-8 rounded-xl shadow-lg relative text-left">
+
+          {/* BADGE */}
+          <span className="absolute left-1/2 -translate-x-1/2 -top-4 bg-yellow-400 text-black text-xs px-4 py-1 rounded-full font-semibold shadow">
+            Most Popular
+          </span>
+
+          <h3 className="font-semibold text-lg mt-2">Pro</h3>
+          <p className="mt-1">Best for professionals</p>
+
+          <p className="text-4xl font-bold mt-4">$29</p>
+          <p className="mb-6">/Month</p>
+
+          <ul className="space-y-2 text-sm">
+  <li><span className="text-white mr-2">✔</span>Access to all tools</li>
+  <li><span className="text-white mr-2">✔</span>Premium templates</li>
+  <li><span className="text-white mr-2">✔</span>Priority support</li>
+</ul>
+
+          <button className="mt-8 bg-white text-purple-600 w-full py-2 rounded-full font-semibold">
             Get Started
           </button>
         </div>
 
         {/* ENTERPRISE */}
-        <div className="bg-white p-6 rounded-xl shadow">
-          <h3 className="font-bold mb-2">Enterprise</h3>
-          <p className="text-3xl font-bold">$99</p>
-          <ul className="text-gray-500 mt-4 space-y-1">
-            <li>✔ Full access</li>
-            <li>✔ Team support</li>
-          </ul>
-          <button className="mt-6 border px-4 py-2 rounded">
+        <div className="bg-white p-8 rounded-xl shadow-md text-left">
+          <h3 className="font-semibold text-lg">Enterprise</h3>
+          <p className="text-gray-500 mt-1">For large teams & companies</p>
+
+          <p className="text-4xl font-bold mt-4">$99</p>
+          <p className="text-gray-400 mb-6">/Month</p>
+
+          <ul className="space-y-2 text-sm text-gray-600">
+  <li><span className="text-green-500 mr-2">✔</span>Full access</li>
+  <li><span className="text-green-500 mr-2">✔</span>Team features</li>
+  <li><span className="text-green-500 mr-2">✔</span>Dedicated support</li>
+</ul>
+
+          <button className="mt-8 bg-purple-600 text-white w-full py-2 rounded-full hover:bg-purple-700">
             Contact Us
           </button>
         </div>

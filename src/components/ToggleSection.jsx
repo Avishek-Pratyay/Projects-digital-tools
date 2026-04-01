@@ -2,32 +2,24 @@ import { useState } from "react";
 import Products from "./Products";
 import Cart from "./Cart";
 
-export default function ToggleSection(props) {
+export default function ToggleSection({
+  products,
+  cart,
+  addToCart,
+  removeFromCart,
+  checkout,
+}) {
   const [view, setView] = useState("products");
 
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-20 bg-gray-50">
 
-      {/* TITLE */}
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold">
-          Premium Digital Tools
-        </h2>
-        <p className="text-gray-500 mt-2">
-          Choose from our curated collection of premium tools designed</p>
-        <p className="text-gray-500 mt-2">  
-          to boost your productivity and creativity.
-        </p>
-      </div>
-
-      {/* TOGGLE BUTTONS */}
-      <div className="flex justify-center gap-3 mb-10">
+      {/* BUTTONS */}
+      <div className="flex justify-center gap-4 mb-8">
         <button
           onClick={() => setView("products")}
-          className={`px-5 py-2 rounded-full text-sm ${
-            view === "products"
-              ? "bg-purple-600 text-white"
-              : "bg-white border"
+          className={`px-4 py-2 rounded ${
+            view === "products" ? "bg-purple-600 text-white" : "bg-white border"
           }`}
         >
           Products
@@ -35,21 +27,31 @@ export default function ToggleSection(props) {
 
         <button
           onClick={() => setView("cart")}
-          className={`px-5 py-2 rounded-full text-sm ${
-            view === "cart"
-              ? "bg-purple-600 text-white"
-              : "bg-white border"
+          className={`px-4 py-2 rounded ${
+            view === "cart" ? "bg-purple-600 text-white" : "bg-white border"
           }`}
         >
-          Cart ({props.cart.length})
+          Cart ({cart.length})
         </button>
       </div>
 
+      {/* PARAGRAPH */}
+      {view === "products" && (
+        <div className="text-center mb-10 max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg">
+            Choose from our curated collection of premium digital products designed.
+          </p>
+          <p className="text-gray-500 text-lg mt-2">
+            To boost your productivity and creativity.
+          </p>
+        </div>
+      )}
+
       {/* CONTENT */}
       {view === "products" ? (
-        <Products {...props} />
+        <Products products={products} addToCart={addToCart} cart={cart} />
       ) : (
-        <Cart {...props} />
+        <Cart cart={cart} removeFromCart={removeFromCart} checkout={checkout} />
       )}
     </div>
   );

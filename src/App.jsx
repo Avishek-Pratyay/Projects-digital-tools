@@ -15,14 +15,14 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (p) => {
-    setCart([...cart, p]);
+  const addToCart = (product) => {
+    setCart([...cart, product]);
     toast.success("Added to cart");
   };
 
   const removeFromCart = (id) => {
     setCart(cart.filter((item) => item.id !== id));
-    toast.error("Removed");
+    toast.error("Removed from cart");
   };
 
   const checkout = () => {

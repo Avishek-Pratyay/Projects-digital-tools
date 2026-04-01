@@ -2,7 +2,7 @@ import cartIcon from "/assets/shopping-cart.png";
 
 export default function Navbar({ count }) {
   return (
-    <div className="flex justify-between items-center px-10 py-4 bg-white shadow">
+    <div className="flex justify-between items-center px-10 py-4 bg-white shadow sticky top-0 z-50">
 
       {/* LEFT LOGO */}
       <h1 className="text-2xl font-bold text-purple-600">
