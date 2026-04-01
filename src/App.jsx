@@ -5,6 +5,7 @@ import Stats from "./components/Stats";
 import ToggleSection from "./components/ToggleSection";
 import Steps from "./components/Steps";
 import Pricing from "./components/Pricing";
+import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import products from "./data/products.json";
 
@@ -45,6 +46,7 @@ function App() {
 
       <Steps />
       <Pricing />
+      <CTA />
       <Footer />
 
       <ToastContainer />
