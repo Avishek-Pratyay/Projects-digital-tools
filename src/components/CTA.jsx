@@ -8,7 +8,9 @@ export default function CTA() {
 
       <p className="mt-3">
         Join thousands of professionals who are already using DigiTools to work smarter.
-                          Start your free trial today.
+      </p>
+      <p className="mt-3">
+        Start your free trial today.
       </p>
 
       <div className="mt-6 flex justify-center gap-4">
@@ -20,7 +22,7 @@ export default function CTA() {
         </button>
       </div>
       <p className="mt-3">
-        14-day free trials * No credit card required * Cancel anytime
+        14-day free trials • No credit card required • Cancel anytime
       </p>
 
     </div>

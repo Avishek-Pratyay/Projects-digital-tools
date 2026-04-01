@@ -14,7 +14,8 @@ export default function ToggleSection(props) {
           Premium Digital Tools
         </h2>
         <p className="text-gray-500 mt-2">
-          Choose from our curated collection of premium tools designed
+          Choose from our curated collection of premium tools designed</p>
+        <p className="text-gray-500 mt-2">  
           to boost your productivity and creativity.
         </p>
       </div>

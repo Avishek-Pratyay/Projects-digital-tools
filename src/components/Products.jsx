@@ -1,34 +1,37 @@
-export default function Products({ products, addToCart }) {
+import productData from "../data/products.json"; // your JSON file
+import { toast } from "react-toastify";
+
+export default function Products() {
+  const addToCart = (product) => {
+    // implement add to cart logic here
+    toast.success(`${product.name} added to cart`);
+  };
+
   return (
-    <div className="grid md:grid-cols-3 gap-8 px-10">
-      {products.map((p) => (
+    <div className="grid md:grid-cols-3 gap-6">
+      {productData.map((p) => (
         <div
           key={p.id}
-          className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition"
+          className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition relative"
         >
+          {/* ICON - TOP LEFT */}
+          <img src={p.icon} className="w-10 absolute top-4 left-4" />
 
-          {/* TAG */}
-          <span className="bg-purple-100 text-purple-600 text-xs px-3 py-1 rounded-full">
+          {/* TAG - TOP RIGHT */}
+          <span className="bg-purple-100 text-purple-600 text-xs px-3 py-1 rounded-full absolute top-4 right-4">
             {p.tagType}
           </span>
 
-          {/* ICON */}
-          <img src={p.icon} className="w-12 mt-4 mb-3" />
-
           {/* TITLE */}
-          <h2 className="text-lg font-bold">{p.name}</h2>
+          <h2 className="text-lg font-bold mt-14">{p.name}</h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-500 text-sm mt-1">
-            {p.description}
-          </p>
+          <p className="text-gray-500 text-sm mt-1">{p.description}</p>
 
           {/* PRICE */}
           <p className="text-xl font-bold mt-3">
             ${p.price}
-            <span className="text-sm text-gray-400">
-              /{p.period}
-            </span>
+            <span className="text-sm text-gray-400">/{p.period}</span>
           </p>
 
           {/* FEATURES */}

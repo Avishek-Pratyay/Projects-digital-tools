@@ -10,7 +10,7 @@ export default function Banner() {
 
           {/* BADGE */}
           <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">
-            New: AI-Powered Tools Available
+            ⦿ New: AI-Powered Tools Available
           </span>
 
           {/* HEADING */}
